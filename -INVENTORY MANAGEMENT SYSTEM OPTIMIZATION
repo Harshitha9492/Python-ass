@@ -1,0 +1,71 @@
+DATA FLOW DIAGRAM:
+
+User Input (Product ID/Name, Sales Data, Inventory Adjustments) → Inventory Tracking Application Reorder Calculation Algorithm.
+
+Alert on Low Stock
+
+Stockouts, Cost Implications) Generate Reports (Inventory Turnover,
+
+INVENTORY TRACKING APPLICATION-
+
+definit (self, product id, name, initial stock, reorder point,
+
+class Product
+
+self product id= product id self.name = name.
+
+reorder_quantity):
+
+self.stock initial stock
+
+self.reorder point reorder point
+
+self.reorder quantity reorder_quantity
+
+def update stock(self, adjustment):
+
+self stock + adjustment
+
+class Inventory ManagementSystem:
+
+definit (self) self products()
+
+def add product(self, product id, name, initial stock, reorder point, reorder_quantity) if product id not in self.products:
+
+self.products[product.id] = Product(product id, name, initial stock,
+
+reorder point, reorder_quantity) else:
+
+print("Product with ID (product.id) already exists")
+
+def track inventory(self, product id, adjustment):
+
+if product id in self.products: self products[product_id] update_stock(adjustment) if self.products/product_id].stock <
+
+self.products[product id).reorder point: self.generate reorder_alert(product_id)
+
+else print(f Product with ID (product id) does not exist.")
+
+def generate reorder_alert(self, product id) print("Alert: Product (self.products/product_id].name) is below reorder point. Current stock: (self products[product_id].stock)")
+
+def get product_stock(self, product_id): if product, id in self products: retum self products[product_id) stock else
+
+return None
+
+#Example usage. ims Inventory ManagementSystem()
+
+ims.add product(1, 'Keyboard", 50, 10, 50) ims.add product(2, 'Mouse', 75, 15, 30)
+
+#Simulate inventory adjustments
+
+ims.track inventory(1,-5) # Sold 5 keyboards. ims.track inventory(2,-10) #Sold 10 mice
+
+#Check current stock levels
+
+print("Current stock levels:)
+
+print("Keyboard: (ims.get product stock(1)))
+
+print(Mouse (ims.get product_stock(2)}')
+
+3) Problem 3: Real-Time Traffic Monitoring System
